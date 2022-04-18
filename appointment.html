@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Covid Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Questrial&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="appointment.css">
+<link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Questrial&display=swap" rel="stylesheet">
+<body >
+<div class="title">
+<h2>Covid Treatment Appointment</h2></div>
+</body>
+ <body>
+
+    <div class="container">
+        
+        <div class="left">
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+
+
+        <div class="right">
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+<br><br><br>
+
+    <div class ="left">
+        <label for="Contact">Contact: </label>
+        <input type="text" id="Contact" name="Contact" placeholder="Your contact..">
+    </div>
+
+    <div class="right">
+        <label for="Age">Age: </label>
+        <input type="text" id="Age" name="Age" placeholder="Your Age ..">
+    </div>
+
+<br><br><br>
+
+    <div class="left">
+    <label for="Dose">Dose Taken: </label>
+    <select name="Dose" id="Dose">
+    <option value="yes">first</option>
+    <option value="no">second</option>
+    </select>
+    </div>
+
+    <div class="right">
+    <form action="/action_page.php">
+        <label for="Appointment date ">Appointment date: </label>
+        <input type="date" id="Appointment Date" name="Appointment Date"> 
+    </form>
+    </div>
+
+ <br></br><br>
+    <div class="left">
+        <label for="Doctor">Time slot</label>
+        <select id="Doctor" name="Doctor">
+        <option value="1">9.30 am</option>
+        <option value=" 2">11 am</option>
+        <option value="3">12.30 pm</option>
+        <option value="4">2 pm</option>
+        <option value="5">3.30 pm</option>
+        <option value="6">5 pm</option>
+        </select>
+    </div>
+<br></br><br><br><br><br>
+<div id="submit-btn">
+    <input type="submit" value="Submit">
+    <br><br><br><br>
+</div>
+</body>
+</html>
