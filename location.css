@@ -4,7 +4,8 @@ body{ display: flex; flex-wrap: wrap; justify-content: center; background: grey;
     }
     
     .card
-    {margin-top: 35px;
+    {
+      margin-top: 35px;
     background: #17141d;
     background: white;
     display: grid;
@@ -17,7 +18,7 @@ body{ display: flex; flex-wrap: wrap; justify-content: center; background: grey;
     text-align: center;
     overflow: hidden;
     transition: all 0.6s ease;
-      //color: white;
+    color: white;
     }
     
     .card-img{
@@ -37,8 +38,9 @@ body{ display: flex; flex-wrap: wrap; justify-content: center; background: grey;
     }
     
     #visit-header, #visit-state{
-      font-family: arial;
+      font-family: 'Open Sans';
       text-transform: uppercase;
+      color: #000;
     }
     
     #visit-state{font-size: 18px;
@@ -102,7 +104,6 @@ body{ display: flex; flex-wrap: wrap; justify-content: center; background: grey;
     }
     
     .rgb::after {
-    ...
       border-radius: 16px;
       filter: blur(8px);
       transform: translateZ(-1px); /*or z-index */
