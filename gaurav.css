@@ -18,6 +18,7 @@
   --border-radius: 60px 5px;
   --fade-green: rgba(57, 87, 64, 0.55);
 }
+
 *,
 *::before,
 *::after {
@@ -27,7 +28,6 @@
   list-style: none;
 }
 body,
-
 html {
   width: 100%;
   font-size: 10px;
@@ -75,13 +75,14 @@ label[for="ham-menu"] {
   height: 50%;
 }
 .ham-menu > ul > li {
-  font-size: 3.5em;
+  /* font-size: 3.5em; */
   font-size : clamp(1em, 60vw, 2.5em);
   white-space: nowrap;
   letter-spacing: 0.15em;
   cursor: pointer;
   color: rgb(97, 97, 97);
   font-family: 'Raleway', sans-serif;
+  font-weight: 50;
 
 }
 #ham-menu:checked + label {
@@ -177,7 +178,7 @@ label[for="ham-menu"] {
   text-align:justify;
   padding-left: 20px;
   padding-right: 20px;
-  width: 500px;
+  width: 650px;
   word-spacing: 0.2em;
   letter-spacing: 0;
   font-family: 'Open Sans';
@@ -214,7 +215,7 @@ label[for="ham-menu"] {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .carousel-item {
-    height: 65vh;
+    height: 80vh;
     min-height: 350px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -227,6 +228,7 @@ label[for="ham-menu"] {
     position:relative;
     height:65vh;
     min-height: 350px;    
+    width: 100%;
     
 }
   #container img {
@@ -235,8 +237,7 @@ label[for="ham-menu"] {
   }
   
   #container-2{
-    height: 100px;
-    padding: 50px;
+    height: auto;
     line-height: 65px;
     vertical-align: middle;
   } 
@@ -335,7 +336,7 @@ label[for="ham-menu"] {
     animation-duration: 2s;
   }
   #container img:nth-of-type(1) {
-    -webkit-animation-delay: 2s;
+    -webkit-animation-delay: 0s;
     -moz-animation-delay: 2s;
     -o-animation-delay: 2s;
     animation-delay: 0s;
@@ -344,7 +345,7 @@ label[for="ham-menu"] {
     -webkit-animation-delay: 2s;
     -moz-animation-delay: 2s;
     -o-animation-delay: 2s;
-    animation-delay: 2s;
+    animation-delay: 0s;
   }
   #container img:nth-of-type(3) {
     -webkit-animation-delay: 0s;
@@ -378,135 +379,7 @@ label[for="ham-menu"] {
     min-height: 100vh;
   }
   
-  .footer {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 30px 30px 20px 30px;
-    color: #2f2f2f;
-    background-color: #fff;
-    border-top: 1px solid #e5e5e5;
-  }
   
-  .footer > * {
-    flex:  1 100%;
-  }
-  
-  .footer__addr {
-    margin-right: 1.25em;
-    margin-bottom: 2em;
-  }
-  
-
-  .footer__logo {
-    
-    font-family: 'Pacifico', cursive;
-    font-weight: 400;
-    text-transform: lowercase;
-    font-size: 1.5rem;
-  }
-  
-  .footer__addr h2 {
-    margin-top: 1.3em;
-    font-size: 15px;
-    font-weight: 400;
-  }
-  
-  .nav__title {
-    font-weight: 400;
-    font-size: 15px;
-  }
-  
-  .footer address {
-    font-style: normal;
-    color: #999;
-  }
-  
-  .footer__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 36px;
-    max-width: max-content;
-    background-color: rgb(33, 33, 33, 0.07);
-    border-radius: 100px;
-    color: #2f2f2f;
-    line-height: 0;
-    margin: 0.6em 0;
-    font-size: 1rem;
-    padding: 0 1.3em;
-  }
-  
-  .footer ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .footer li {
-    line-height: 2em;
-  }
-  
-  .footer a {
-    text-decoration: none;
-  }
-  
-  .footer__nav {
-    display: flex;
-    flex-flow: row wrap;
-  }
-  
-  .footer__nav > * {
-    flex: 1 50%;
-    margin-right: 1.25em;
-  }
-  
-  .nav__ul a {
-    color: #999;
-  }
-  
-  .nav__ul--extra {
-    column-count: 2;
-    column-gap: 1.25em;
-  }
-  
-  .legal {
-    display: flex;
-    flex-wrap: wrap;
-    color: #999;
-  }
-    
-  .legal__links {
-    display: flex;
-    align-items: center;
-  }
-  
-  .heart {
-    color: #2f2f2f;
-  }
-  
-  @media screen and (min-width: 24.375em) {
-    .legal .legal__links {
-      margin-left: auto;
-    }
-  }
-  
-  @media screen and (min-width: 40.375em) {
-    .footer__nav > * {
-      flex: 1;
-    }
-    
-    .nav__item--extra {
-      flex-grow: 2;
-    }
-    
-    .footer__addr {
-      flex: 1 0px;
-    }
-    
-    .footer__nav {
-      flex: 2 0px;
-    }
-  }
-
 a.change_hover_color:hover { 
     color: white !important;
     background-color: transparent;
@@ -544,7 +417,7 @@ a.change_link_color:link {
     transition: all 0.6s ease;
     position:absolute;
     left:10em;
-    top:13em;
+    top:12em;
     width: 15rem; 
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
@@ -557,56 +430,37 @@ a.change_link_color:link {
     background: #17141d;
     /* background: white; */
     border-radius: 18px;
-    box-shadow: -1rem 0 2rem #000;
+    /* box-shadow: -1rem 0 2rem #000; */
     text-align: center;
     overflow: hidden;
     transition: all 0.6s ease;
     position:absolute;
     left:10em;
-    top:14.5em;
-    width: 15rem; 
+    top:13.5em;
+    width: 20rem; 
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     word-spacing: 0;
     }
 
-  .card-img{
-      grid-area: image;
-      background: linear-gradient(#fff0 0%, #fff0, 70%, #1d1d1d 100%), url("https://livingcities.org/wp-content/uploads/2021/04/AustinTX.jpg");
-      background-size: cover;
+    .card-3
+    {
+      margin-top: 35px;
+    background: #17141d;
+    /* background: white; */
+    border-radius: 18px;
+    /* box-shadow: -1rem 0 2rem #000; */
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.6s ease;
+    position:absolute;
+    left:10em;
+    top:15em;
+    width: 15rem; 
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 0;
     }
-    
-    .card-discription{
-      grid-area: text;
-      font-family: roboto;
-      margin-top: -10px;
-    }
-    
-    .card-discription > p{
-    margin: 15px; margin-top: -10px;
-    }
-    
-    #visit-header, #visit-state{
-      font-family: arial;
-      text-transform: uppercase;
-     
-    }
-    
-    #visit-state{font-size: 18px;
-    margin-top: -18px; margin-bottom: 20px;
-     color: #aaa;
-    }
-    
-    #booknowbtn{
-     background: #e9443c;
-     grid-area: bottom;
-     border: none;
-     font-size: 20px;
-     color: white;
-     margin-top: 30px;
-    }
-    
-    #booknowbtn:hover{cursor: pointer; background: red;}
     
     .card-1:hover{
       transform: translateY(-1rem);
@@ -624,6 +478,13 @@ a.change_link_color:link {
       transform: translateX(130px);
     }
     
+    .card-3:hover{
+      transform: translateY(-1rem);
+    }
+    
+    .card-3:hover~.card-3{
+      transform: translateX(130px);
+    }
     
     .card:not(:first-child){
       margin-left: -130px;
@@ -633,7 +494,7 @@ a.change_link_color:link {
     width: 100%;
     display: inline-block;
     background: white;
-    height: 150vh;
+    height: 140vh;
     text-align: center;
     font-size: 70px;
     font-weight: 700;
@@ -645,8 +506,12 @@ a.change_link_color:link {
 
   .img-1{
     display: block;
-    margin-left:10em;
-    width: 50px; 
+    position: absolute;
+    left: 12em;
+    top: 14em;
+    width: 50%;
+    height: 100px;
+    object-fit: contain; 
   }
   
   .footer-distributed{
@@ -657,6 +522,7 @@ a.change_link_color:link {
       text-align: left;
       font: bold 16px sans-serif;
       padding: 55px 50px;
+      word-spacing: normal;
   }
   
   .footer-distributed .footer-left,
@@ -705,12 +571,14 @@ a.change_link_color:link {
       font-size: 14px;
       font-weight: normal;
       margin: 0;
+      word-spacing: normal;
   }
   
   /* Footer Center */
   
   .footer-distributed .footer-center{
       width: 35%;
+      word-spacing: normal;
   }
   
   .footer-distributed .footer-center i
@@ -748,6 +616,7 @@ a.change_link_color:link {
       font-weight: normal;
       font-size:14px;
       line-height:2;
+      word-spacing: normal;
   }
   
   .footer-distributed .footer-center p a
@@ -782,7 +651,7 @@ a.change_link_color:link {
   .footer-distributed .footer-company-about
   {
       line-height: 20px;
-      color:  #92999f;
+      color: #cbcbc2;
       font-size: 13px;
       font-weight: normal;
       margin: 0;
@@ -839,4 +708,28 @@ a.change_link_color:link {
       }
   
   }
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body, button, input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+  
+  .background {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .container{
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+  }
+  
   
