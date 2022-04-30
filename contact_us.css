@@ -4,6 +4,14 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .screen-body-item
+  {
+    font-size: 18px;
+    color:#ffa4bd;
+    align:center ;
+    padding-left:40px;
+
+  }
   body {
     background:url('map.jpg');
     font-size: 12px;
@@ -874,5 +882,4 @@
       padding: 0;
     }
   }
-  
   
