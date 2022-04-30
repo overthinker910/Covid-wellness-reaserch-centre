@@ -523,6 +523,7 @@ a.change_link_color:link {
       font: bold 16px sans-serif;
       padding: 55px 50px;
       word-spacing: normal;
+      font-family: 'Open Sans';
   }
   
   .footer-distributed .footer-left,
